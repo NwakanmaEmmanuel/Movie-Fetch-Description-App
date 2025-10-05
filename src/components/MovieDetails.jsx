@@ -6,7 +6,7 @@ import { useRef } from "react";
 import '../App.css'
 
 
-const KEY = "import.meta.env.VITE_API_KEY";
+const KEY = import.meta.env.VITE_API_KEY;
 
 export default function MovieDetails({
   selectedId,

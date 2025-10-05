@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const KEY = "import.meta.env.VITE_API_KEY";
+const KEY = import.meta.env.VITE_API_KEY;
 
 export function useMovies(query) {
   const [movies, setMovies] = useState([]);
